@@ -15,7 +15,7 @@
     .modal-panel{transform:translateY(18px);transition:transform .25s ease}.modal.open .modal-panel{transform:translateY(0)}
     .toast{transform:translateY(130%);opacity:0;transition:.3s ease}.toast.show{transform:translateY(0);opacity:1}
     
-    /* Estilo para tallas agotadas */
+    /* Estilo para tallas agotadas (grises y tachadas) */
     .size-btn.out-of-stock {
       background-color: #f2edf2 !important;
       color: #b3a7b3 !important;
@@ -217,27 +217,29 @@
     const img = fileName => `imagenes/${fileName}`;
     const catalog = {
       perfumes: [
-        ["Esencia Nocturna","Notas cálidas con un acabado sofisticado.",129000,"15096784"],["Ámbar Dorado","Una fragancia luminosa para todos los días.",118000,"21008941"],["Rosa de Seda","Aroma floral suave con un toque romántico.",124000,"15097508"],["Cristal Claro","Esencia fresca de carácter minimalista.",112000,"15574229"],["Luz de Nácar","Notas delicadas y un fondo elegante.",135000,"10629797"],["Maison Aroma","Colección refinada para regalar o descubrir.",142000,"19663386"],["Vela Ámbar","Calidez envolvente para tardes especiales.",121000,"20742027"],["Velvet Noir","Fragancia intensa con acentos misteriosos.",148000,"36482359"],["Jardín Rosé","Notas florales para una presencia sutil.",126000,"31188629"],["Mármol Blanco","Equilibrio limpio y contemporáneo.",119000,"7814958"],["Cuero Noble","Carácter profundo y sofisticado.",151000,"30263576"],["Sol Dorado","Brillo cálido para cada día.",128000,"11711813"],["Lavanda Serena","Aroma sereno de inspiración botánica.",109000,"8166628"],["Brisa Marina","Frescura ligera y luminosa.",116000,"16266295"],["Cofre Signature","Set especial listo para obsequiar.",172000,"34144825"],["Satin Éclat","Una esencia suave con acabado lujoso.",133000,"8553210"],["Atelier Vintage","Perfume clásico de personalidad única.",139000,"10534010"],["Bosque Claro","Notas naturales de fondo amaderado.",123000,"30232707"],["Cítrico Vivo","Aroma brillante y revitalizante.",115000,"21574969"],["Galería de Aromas","Selección curada de fragancias.",159000,"29401618"],["Oro Negro","Intensidad elegante para la noche.",154000,"10924522"],["Orquídea Ámbar","Equilibrio floral y cálido.",137000,"8178744"],["Studio Pink","Fragancia moderna de perfil ligero.",122000,"32645088"],["Tocador Clásico","Esencia atemporal para coleccionar.",145000,"7609022"]
+        ["Hawas Fire","¡Atrévete a oler a fuego líquido! Una bomba marina y mineral que se queda en tu piel por más de 10 horas.",120000,"Hawas_Fire.jpg"],["Mandarin Sky Armaf Oyssey","Una fragancia masculina cítrica y dulce que fusiona la frescura de la mandarina con la calidez del caramelo.",130000,"mandarin_sky_armaf_odyssey.jpg"],["Jean Paul Gaultier Le Beau","Una fragancia tropical, seductora y magnética que combina la frescura del coco con la calidez del haba tonka. (Bajo pedido).",150000,"Jean_Paul_Gaultier_Le_Beau.jpg"],["212 Vip Black","Es una fragancia nocturna, licorosa y dulce diseñada para destacar en la fiesta. (Bajo pedido).",120000,"212_Vip_Black.jpg"],
+["360 Perry Ellis","Un perfume floral-acuático, fresco y limpio, ideal para el día a día por su equilibrio atemporal de notas frutales y almizcle.",120000,"360-de-perry-ellis.jpg"],["Cloud Ariana Grande","un perfume dulce y cremoso con notas de coco, crema batida y lavanda, famoso por su frasco en forma de nube.",130000,"Cloud-ariana-grande.jpg"],["Burberry Her","Una fragancia moderna, dulce y frutal que combina una explosión de bayas rojas con un fondo amaderado y sofisticado.",120000,"Burberry-Her.jpg"]
       ],
       sport: [
-        ["Conjunto blanco y negro","Flexible para entrenar con comodidad, Conjunto licra media pierna Talla Única.",45000,"Conjunto_Blanco_Negro.jpg"],["Conjunto Rojo","Ajuste suave y diseño versátil para tu rutina, Conjunto licra media pierna Talla Única.",45000,"Conjunto_Rojo_Negro_Beige.jpg"],["Conjunto Blanco y Azúl","Conjunto tonos claros para entrenar con estilo, Conjunto licra media pierna Talla Única.",45000,"Conjunto_Azul_Blanco.jpg"],["Conjunto Negro","Tu comodidad diaria, llevada al siguiente nivel, Conjunto licra media pierna Talla Única.",45000,"Conjunto_Negro.jpg"],["Conjunto Rojo Estampado","Prenda cómoda para movilidad natural, Conjunto licra corta Talla Única.",43000,"Conjunto_Rojo_Negro_Blanco.jpg"],["Conjunto Amarillo","Estilo activo que se adapta a tu ritmo, Conjunto licra corta Talla Única.",43000,"Conjunto_Amarillo.jpg"],["Conjunto Rosa Texturizado","Ligero, fresco y listo para moverte,Conjunto licra corta texturizada Talla Única .",43000,"Conjunto_Rosa.jpg"],["Conjunto Fucsia","Diseño funcional de alto rendimiento, Conjunto licra corta Talla Única.",43000,"Conjunto_Fucsia_Azul.jpg"],["Conjunto Nike Azúl claro","Simple, elegante y listo para entrenar, Conjunto licra a la rodilla Talla Única .",48000,"Conjunto_Nike_Azul_Medio.jpg"],["Conjunto Nike Azúl oscuro","Comodidad deportiva para tus recorridos, Conjunto licra larga Talla Única.",48000,"Conjunto_Nike_Oscuro_Largo.jpg"],["Enterizo Azúl Brillante","Tan ligero que olvidarás que lo llevas puesto, Talla Única.",50000,"Enterizo_Azul.jpg"],["Pantalón Lounge","Comodidad deportiva para todos los días.",86000,"6311314"]
+        ["Conjunto blanco y negro","Flexible para entrenar con comodidad, Conjunto licra media pierna Talla Única.",45000,"Conjunto_Blanco_Negro.jpg"],["Conjunto Rojo","Ajuste suave y diseño versátil para tu rutina, Conjunto licra media pierna Talla Única.",45000,"Conjunto_Rojo_Negro_Beige.jpg"],["Conjunto Blanco y Azúl","Conjunto tonos claros para entrenar con estilo, Conjunto licra media pierna Talla Única.",45000,"Conjunto_Azul_Blanco.jpg"],["Conjunto Negro","Tu comodidad diaria, llevada al siguiente nivel, Conjunto licra media pierna Talla Única.",45000,"Conjunto_Negro.jpg"],["Conjunto Rojo Estampado","Prenda cómoda para movilidad natural, Conjunto licra corta Talla Única.",43000,"Conjunto_Rojo_Negro_Blanco.jpg"],["Conjunto Amarillo","Estilo activo que se adapta a tu ritmo, Conjunto licra corta Talla Única.",43000,"Conjunto_Amarillo.jpg"],["Conjunto Rosa Texturizado","Ligero, fresco y listo para moverte,Conjunto licra corta texturizada Talla Única .",43000,"Conjunto_Rosa.jpg"],["Conjunto Fucsia","Diseño funcional de alto rendimiento, Conjunto licra corta Talla Única.",43000,"Conjunto_Fucsia_Azul.jpg"],["Conjunto Nike Azúl claro","Simple, elegante y listo para entrenar, Conjunto licra a la rodilla Talla Única .",48000,"Conjunto_Nike_Azul_Medio.jpg"],["Conjunto Nike Azúl oscuro","Comodidad deportiva para tus recorridos, Conjunto licra larga Talla Única.",48000,"Conjunto_Nike_Oscuro_Largo.jpg"],["Enterizo Azúl Brillante","Tan ligero que olvidarás que lo llevas puesto, Talla Única.",50000,"Enterizo_Azul.jpg"]
       ],
       sportShoes: [
         ["Tenis Training Pro","Soporte y amortiguación para alto rendimiento.",120000,"Tenis_Training.jpg"],
         ["Zapatillas Urban Fit","Diseño cómodo y moderno para tus caminatas.",95000,"Zapatillas_Urban.jpg"]
       ],
       women: [
-        ["Vestido Aura","Silueta fluida para una presencia elegante.",165000,"8619007"],["Blusa Lino","Ligera, minimalista y fácil de combinar.",98000,"18220443"],["Falda Marea","Diseño femenino con movimiento natural.",105000,"39457750"],["Bolso Nube","Un complemento refinado para tu día.",142000,"9327162"],["Vestido Rubí","Color y presencia para ocasiones especiales.",179000,"36707410"],["Cárdigan Alba","Textura suave para looks acogedores.",115000,"9323857"],["Pantalón Palazzo","Caída amplia de inspiración elegante.",128000,"28168176"],["Blusa Satin","Brillo sutil para elevar tus combinaciones.",109000,"9767825"],["Vestido Floral","Una opción fresca para días luminosos.",138000,"17626543"],["Blazer Índigo","Estructura impecable para un look seguro.",156000,"19289548"],["Enterizo Luma","Diseño completo de estética contemporánea.",149000,"32815519"],["Top Línea","Prenda versátil para un estilo urbano.",72000,"39457542"],["Vestido Maxi","Silueta larga y movimiento delicado.",168000,"20056500"],["Chaqueta Denim","Clásico atemporal para combinar.",132000,"30526284"],["Vestido Noche","Elegancia sencilla para celebrar.",188000,"36973659"],["Pañuelo Bruma","Detalle suave para complementar tu estilo.",64000,"1092198"],["Falda Oficina","Diseño pulido para días profesionales.",116000,"14156540"],["Túnica Flor","Prenda ligera con una caída relajada.",97000,"31879659"],["Chaqueta Rebel","Textura y carácter para looks definidos.",154000,"29878696"],["Romper Verano","Una pieza fresca para días soleados.",126000,"14083136"],["Suéter Cálido","Tejido acogedor de inspiración clásica.",99000,"5710033"],["Pantalón Flora","Estampado amplio con presencia.",121000,"39457560"],["Top Hombros","Silueta femenina para combinar fácilmente.",79000,"7230507"],["Trench Icon","Abrigo clásico de líneas sofisticadas.",196000,"29251003"]
+        ["Vestido Aura","Silueta fluida para una presencia elegante.",165000,"8619007"],["Blusa Lino","Ligera, minimalista y fácil de combinar.",98000,"18220443"],["Falda Marea","Diseño femenino con movimiento natural.",105000,"39457750"],["Bolso Nube","Un complemento refinado para tu día.",142000,"9327162"],["Vestido Rubí","Color y presencia para ocasiones especiales.",179000,"36707410"],["Cárdigan Alba","Textura suave para looks acogedores.",115000,"9323857"]
       ],
       accessories: [
-        ["Collar Tulipan","Brillo delicado para completar tus looks. Material Acero inoxidable.",20000,"Collar_Tulipan_Cuadrado.jpg"],["Esclava Hombre","Diseño contemporáneo para un estilo con actitud, lleva tallado el padre nuestro. Material Acero inoxidable.",28000,"Esclava_Hombre_PadreNuestro.jpg"],["Pin de Fisioterapia","Dale un detalle personalizado a tus prendas. Material Acero inoxidable.",18000,["Pin_Fisioterapia_Maleta.jpg", "Pin_Fisioterapia.jpg"]],["Reloj Círculo","Un detalle atemporal para cada ocasión.",148000,"36812419"],["Aretes Sol","Acabado dorado de presencia elegante.",58000,"12168883"],["Pulsera Duna","Brillo sutil para usar todos los días.",62000,"14509641"],["Sombrero Norte","Accesorio con carácter y estilo clásico.",98000,"34200743"],["Clutch Noche","Un toque refinado para eventos especiales.",122000,"28387111"],["Pinza Perla","Detalle delicado para tu peinado.",36000,"19567138"],["Anillo Halo","Diseño minimalista de brillo elegante.",54000,"17261921"],["Pañuelo Seda","Color y movimiento para tus accesorios.",67000,"36455708"],["Tobillera Luz","Cadena fina de inspiración delicada.",48000,"28573577"],["Broche Vintage","Detalle especial para personalizar prendas.",52000,"30755639"],["Billetera Terra","Cuero práctico con diseño moderno.",85000,"7952556"],["Cadena Layer","Capas doradas para elevar tu look.",73000,"14355033"],["Tote Esencial","Bolso amplio de estética minimalista.",138000,"36365228"],["Aretes Perla","Clásicos luminosos para cada ocasión.",64000,"11365012"],["Diadema Velvet","Un acento suave para tu peinado.",41000,"34972707"],["Brazalete Aura","Pieza protagonista de acabado dorado.",81000,"38827914"],["Llavero Charm","Pequeño detalle para llevar contigo.",29000,"4896293"],["Dije Mini","Un símbolo delicado para regalar.",59000,"33452872"],["Argollas Gold","Silueta moderna de brillo cálido.",66000,"7882737"],["Bucket Hat","Accesorio relajado para looks urbanos.",74000,"20016549"],["Monedero Mini","Pieza compacta en cuero elegante.",53000,"28086459"]
+        ["Collar Tulipan","Brillo delicado para completar tus looks. Material Acero inoxidable.",20000,"Collar_Tulipan_Cuadrado.jpg"],["Esclava Hombre","Diseño contemporáneo para un estilo con actitud, lleva tallado el padre nuestro. Material Acero inoxidable.",28000,"Esclava_Hombre_PadreNuestro.jpg"],["Pin de Fisioterapia","Dale un detalle personalizado a tus prendas. Material Acero inoxidable.",18000,["Pin_Fisioterapia_Maleta.jpg", "Pin_Fisioterapia.jpg"]],["Reloj Círculo","Un detalle atemporal para cada ocasión.",148000,"36812419"]
       ]
     };
 
-    // Tallas agotadas por ID de producto
+    // Tallas agotadas por ID de producto (se muestran en gris y tachadas)
     const agotados = {
       "sport-1": ["S", "M", "L"], "sport-2": ["S", "M", "L"], "sport-3": ["S", "M", "L"], "sport-4": ["S", "M", "L"], "sport-5": ["S", "M", "L"], "sport-6": ["S", "M", "L"], "sport-7": ["S", "M", "L"], "sport-8": ["S", "M", "L"], "sport-9": ["S", "M", "L"], "sport-10": ["S", "M", "L"], "sport-11": ["S", "L", "Única"],
-      "sportShoes-1": ["38"]
+      "sportShoes-1": ["38"],
+      "women-1": ["S"] // Ejemplo: Al Vestido Aura se le desactiva la talla S
     };
 
     const products={}, cart={}, money=v=>new Intl.NumberFormat("es-CO",{style:"currency",currency:"COP",maximumFractionDigits:0}).format(v);
@@ -298,30 +300,34 @@
           node.querySelector(".product-description").textContent=item[1];
           node.querySelector(".product-price").textContent=money(item[2]);
 
-          if(section === "sport" || section === "sportShoes"){
+          // Activación de tallas para Ropa Deportiva, Zapatos y Ropa Femenina
+          if(section === "sport" || section === "sportShoes" || section === "women"){
             const sizeContainer = node.querySelector(".size-container");
             const sizeOptions = node.querySelector(".size-options");
             sizeContainer.classList.remove("hidden");
             
-            const sizes = section === "sport" ? ["S", "M", "L", "Única"] : ["36", "37", "38", "39", "40"];
+            let sizes = ["S", "M", "L", "Única"];
+            if(section === "sportShoes") sizes = ["36", "37", "38", "39", "40"];
+            
             const tallasAgotadasDelProducto = agotados[id] || [];
+            let firstAvailableSet = false;
 
-            sizes.forEach((size, i) => {
+            sizes.forEach((size) => {
+              const isAgotado = tallasAgotadasDelProducto.includes(size);
               const btn = document.createElement("button");
               btn.type = "button";
               
-              const isAgotado = tallasAgotadasDelProducto.includes(size);
-
-              if (isAgotado) {
+              if(isAgotado){
                 btn.className = "size-btn out-of-stock px-3 py-1 rounded-lg border text-xs font-bold";
-                btn.textContent = size;
                 btn.disabled = true;
               } else {
-                const esPrimeraValida = !sizes.slice(0, i).some(s => !tallasAgotadasDelProducto.includes(s));
+                const esPrimeraValida = !firstAvailableSet;
+                if(esPrimeraValida) firstAvailableSet = true;
+                
                 btn.className = `size-btn px-3 py-1 rounded-lg border text-xs font-bold transition ${esPrimeraValida ? 'selected-size bg-[#796791] text-white border-[#796791]' : 'border-[#ded4e0] text-[#685d6d] hover:bg-[#f9f1f5]'}`;
-                btn.textContent = size;
               }
               
+              btn.textContent = size;
               btn.dataset.size = size;
               sizeOptions.appendChild(btn);
             });
@@ -394,15 +400,13 @@
         return;
       }
 
-      // 2. Selección de tallas (evita seleccionar si está agotado)
+      // 2. Selección de tallas (ignora si está agotada)
       const sizeBtn = e.target.closest(".size-btn");
       if(sizeBtn){
         if(sizeBtn.classList.contains("out-of-stock")) return;
         const container = sizeBtn.closest(".size-options");
-        container.querySelectorAll(".size-btn").forEach(b => {
-          if(!b.classList.contains("out-of-stock")){
-            b.className = "size-btn px-3 py-1 rounded-lg border border-[#ded4e0] text-xs font-bold text-[#685d6d] hover:bg-[#f9f1f5]";
-          }
+        container.querySelectorAll(".size-btn:not(.out-of-stock)").forEach(b => {
+          b.className = "size-btn px-3 py-1 rounded-lg border border-[#ded4e0] text-xs font-bold text-[#685d6d] hover:bg-[#f9f1f5]";
           b.classList.remove("selected-size");
         });
         sizeBtn.className = "size-btn selected-size px-3 py-1 rounded-lg border bg-[#796791] text-white border-[#796791]";
