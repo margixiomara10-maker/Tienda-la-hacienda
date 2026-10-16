@@ -47,7 +47,7 @@
   <header class="sticky top-0 z-30 border-b border-[#e9e1e9] bg-white/95 backdrop-blur">
    <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6">
     <a href="#inicio" class="brand-font text-xl tracking-tight text-[#796791] sm:text-2xl" aria-label="Ir al inicio">
-     <span style="color: rgb(121, 103, 145); font-weight: 600; font-size: 16px;">LA HACIENDA</span>
+     <span style="color: rgb(121, 103, 145); font-weight: 600; font-size: 20px;">LA HACIENDA</span>
     </a> 
     <button id="cart-open" type="button" class="relative inline-flex min-h-11 items-center gap-2 rounded-full bg-[#796791] px-4 py-2 text-sm font-bold text-white shadow-sm hover:bg-[#674f80]" aria-label="Abrir carrito"> 
      <i data-lucide="shopping-bag" class="h-4 w-4"></i>
@@ -67,7 +67,7 @@
   </header>
   <main>
    <section id="inicio" class="relative overflow-hidden">
-    <img loading="lazy" class="absolute inset-0 h-full w-full object-cover" src="imagenes/pexels-rebornfilmes-32427331.jpg" alt="Hero">
+    <img loading="lazy" class="absolute inset-0 h-full w-full object-cover" src="imagenes/Fondo.jpg" alt="Hero">
     <div class="hero-wash absolute inset-0"></div>
     <div class="relative mx-auto flex min-h-[520px] max-w-6xl items-end px-5 py-16 sm:min-h-[580px] sm:px-8">
      <div class="max-w-xl text-white">
@@ -99,6 +99,122 @@
      </div>
     </div>
    </section>
+
+
+<!-- SECCIÓN DE VIDEOS DE LA HACIENDA -->
+<section id="videos" class="py-16 px-6 bg-[#f7f1f6]">
+
+    <div class="max-w-7xl mx-auto">
+
+        <div class="text-center mb-10">
+            <p class="uppercase tracking-widest text-sm text-[#865471] mb-3">
+                Descubre LA HACIENDA
+            </p>
+
+            <h2 class="text-3xl md:text-4xl font-semibold text-[#30263a] mb-4"
+                style="font-family: 'Fraunces', serif;">
+                La Hacienda en movimiento
+            </h2>
+
+            <p class="max-w-2xl mx-auto text-[#796791] leading-7">
+                Conoce nuestros productos, descubre novedades y disfruta
+                de los videos que tenemos para ti.
+            </p>
+        </div>
+
+        <!-- CUADRÍCULA DE VIDEOS -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- VIDEO 1 -->
+            <div class="overflow-hidden rounded-2xl bg-white shadow-sm">
+                <div class="aspect-[9/16] bg-[#30263a]">
+                    <video
+    class="w-full h-full object-cover"
+    controls
+    autoplay
+    muted
+    playsinline
+    loop
+    preload="metadata">
+    <source src="videos/video1.mp4" type="video/mp4">
+    Tu navegador no puede reproducir este video.
+</video>
+                </div>
+
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold text-[#30263a]"
+                        style="font-family: 'Fraunces', serif;">
+                        Nuestros favoritos
+                    </h3>
+                    <p class="text-sm text-[#796791] mt-2">
+                        Descubre nuestros productos destacados.
+                    </p>
+                </div>
+            </div>
+
+            <!-- VIDEO 2 -->
+            <div class="overflow-hidden rounded-2xl bg-white shadow-sm">
+                <div class="aspect-[9/16] bg-[#796791]">
+                    <video
+    class="w-full h-full object-cover"
+    controls
+    autoplay
+    muted
+    playsinline
+    loop
+    preload="metadata">
+    <source src="videos/video2.mp4" type="video/mp4">
+    Tu navegador no puede reproducir este video.
+</video>
+                </div>
+
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold text-[#30263a]"
+                        style="font-family: 'Fraunces', serif;">
+                        Nuestras novedades
+                    </h3>
+                    <p class="text-sm text-[#796791] mt-2">
+                        Entérate de lo nuevo que tenemos para ti.
+                    </p>
+                </div>
+            </div>
+
+            <!-- VIDEO 3 -->
+            <div class="overflow-hidden rounded-2xl bg-white shadow-sm">
+                <div class="aspect-[9/16] bg-[#865471]">
+                    <video
+    class="w-full h-full object-cover"
+    controls
+    autoplay
+    muted
+    playsinline
+    loop
+    preload="metadata">
+    <source src="videos/video3.mp4" type="video/mp4">
+    Tu navegador no puede reproducir este video.
+</video>
+                </div>
+
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold text-[#30263a]"
+                        style="font-family: 'Fraunces', serif;">
+                        Conoce LA HACIENDA
+                    </h3>
+                    <p class="text-sm text-[#796791] mt-2">
+                        Inspiración para tu estilo.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- FIN DE LA SECCIÓN DE VIDEOS -->
+
+
+<!-- SCRIPT DE INSTAGRAM: agregar solo una vez por página -->
+<script async src="https://www.instagram.com/embed.js"></script>
+<!-- FIN DE LA SECCIÓN DE REELS -->
 
    <section class="mx-auto max-w-6xl px-4 py-12 sm:px-6 sm:py-16">
     <div class="mb-9 max-w-xl">
@@ -240,14 +356,13 @@
     const catalog = {
       perfumes: [
         ["Hawas Fire","¡Atrévete a oler a fuego líquido! Una bomba marina y mineral que se queda en tu piel por más de 10 horas.",120000,"Hawas_Fire.jpg"],["Mandarin Sky Armaf Oyssey","Una fragancia masculina cítrica y dulce que fusiona la frescura de la mandarina con la calidez del caramelo.",130000,"mandarin_sky_armaf_odyssey.jpg"],["Jean Paul Gaultier Le Beau","Una fragancia tropical, seductora y magnética que combina la frescura del coco con la calidez del haba tonka. (Bajo pedido).",150000,"Jean_Paul_Gaultier_Le_Beau.jpg"],["212 Vip Black","Es una fragancia nocturna, licorosa y dulce diseñada para destacar en la fiesta. (Bajo pedido).",120000,"212_Vip_Black.jpg"],
-["360 Perry Ellis","Un perfume floral-acuático, fresco y limpio, ideal para el día a día por su equilibrio atemporal de notas frutales y almizcle.",120000,"360-de-perry-ellis.jpg"],["Cloud Ariana Grande","un perfume dulce y cremoso con notas de coco, crema batida y lavanda, famoso por su frasco en forma de nube.",130000,"Cloud-ariana-grande.jpg"],["Burberry Her","Una fragancia moderna, dulce y frutal que combina una explosión de bayas rojas con un fondo amaderado y sofisticado.",120000,"Burberry-Her.jpg"]
+        ["360 Perry Ellis","Un perfume floral-acuático, fresco y limpio, ideal para el día a día por su equilibrio atemporal de notas frutales y almizcle.",120000,"360-de-perry-ellis.jpg"],["Cloud Ariana Grande","un perfume dulce y cremoso con notas de coco, crema batida y lavanda, famoso por su frasco en forma de nube.",130000,"Cloud-ariana-grande.jpg"],["Burberry Her","Una fragancia moderna, dulce y frutal que combina una explosión de bayas rojas con un fondo amaderado y sofisticado.",120000,"Burberry-Her.jpg"]
       ],
       sport: [
         ["Conjunto blanco y negro","Flexible para entrenar con comodidad, Conjunto licra media pierna Talla Única.",45000,"Conjunto_Blanco_Negro.jpg"],["Conjunto Rojo","Ajuste suave y diseño versátil para tu rutina, Conjunto licra media pierna Talla Única.",45000,"Conjunto_Rojo_Negro_Beige.jpg"],["Conjunto Blanco y Azúl","Conjunto tonos claros para entrenar con estilo, Conjunto licra media pierna Talla Única.",45000,"Conjunto_Azul_Blanco.jpg"],["Conjunto Negro","Tu comodidad diaria, llevada al siguiente nivel, Conjunto licra media pierna Talla Única.",45000,"Conjunto_Negro.jpg"],["Conjunto Rojo Estampado","Prenda cómoda para movilidad natural, Conjunto licra corta Talla Única.",43000,"Conjunto_Rojo_Negro_Blanco.jpg"],["Conjunto Amarillo","Estilo activo que se adapta a tu ritmo, Conjunto licra corta Talla Única.",43000,"Conjunto_Amarillo.jpg"],["Conjunto Rosa Texturizado","Ligero, fresco y listo para moverte,Conjunto licra corta texturizada Talla Única .",43000,"Conjunto_Rosa.jpg"],["Conjunto Fucsia","Diseño funcional de alto rendimiento, Conjunto licra corta Talla Única.",43000,"Conjunto_Fucsia_Azul.jpg"],["Conjunto Nike Azúl claro","Simple, elegante y listo para entrenar, Conjunto licra a la rodilla Talla Única .",48000,"Conjunto_Nike_Azul_Medio.jpg"],["Conjunto Nike Azúl oscuro","Comodidad deportiva para tus recorridos, Conjunto licra larga Talla Única.",48000,"Conjunto_Nike_Oscuro_Largo.jpg"],["Enterizo Azúl Brillante","Tan ligero que olvidarás que lo llevas puesto, Talla Única.",50000,"Enterizo_Azul.jpg"]
       ],
       sportShoes: [
         ["Nike Free Metcom Blanca Rosada","Soporte y amortiguación para alto rendimiento.",120000,"Zapatos_white_elemental_pink_w.jpg"],
-        
       ],
       women: [
         ["Conjunto Bordeaux Romance","Silueta fluida para una presencia elegante,Elegante set de lencería en tono borgoña, confeccionado en fino encaje floral con lazos de satén.",48000,["Lenceria_Roja_1.jpg","Lenceria_Roja_2.jpg","Lenceria_Roja_3.jpg"]],["Conjunto Sweet Peony","Lencería de encaje floral rosa y tul. Incluye brasier con aro y tanga ajustable con delicados lazos de satén.",48000,["Lenceria_rosa_1.jpg","Lenceria_rosa_2.jpg","Lenceria_rosa_3.jpg"]]
@@ -261,7 +376,20 @@
     const agotados = {
       "sport-1": ["S", "M", "L"], "sport-2": ["S", "M", "L"], "sport-3": ["S", "M", "L"], "sport-4": ["S", "M", "L"], "sport-5": ["S", "M", "L"], "sport-6": ["S", "M", "L"], "sport-7": ["S", "M", "L"], "sport-8": ["S", "M", "L"], "sport-9": ["S", "M", "L"], "sport-10": ["S", "M", "L"], "sport-11": ["S", "L", "Única"],
       "sportShoes-1": ["36"],
-      "women-1": ["S", "M", "Única"], "women-2": ["S", "Única"] // Ejemplo: Al Vestido Aura se le desactiva la talla S
+      "women-1": ["S", "M", "Única"], "women-2": ["S", "Única"]
+    };
+
+    // Límite de stock máximo por producto o por talla específica (ej. "sport-1": 2 o "sport-1-M": 1)
+    const stock = {
+         "sport-1": ["1"],"sport-2": ["1"],"sport-3": ["1"],"sport-4": ["1"], "sport-5": ["1"],"sport-6": ["1"],"sport-7": ["1"], 
+         "sport-8": ["1"], "sport-9": ["1"],"sport-10": ["1"],"sport-11": ["1"],
+         
+         "sportShoes-1": ["10"],
+
+         "women-1": ["1"], "women-2": ["1"],
+    
+         "accessories-1": ["5"], "accessories-2": ["1"], "accessories-3": ["6"], "accessories-4": ["2"], "accessories-5": ["2"]   
+      // "sport-1": 2, // Descomenta y ajusta si quieres poner un límite general o por talla
     };
 
     const products={}, cart={}, money=v=>new Intl.NumberFormat("es-CO",{style:"currency",currency:"COP",maximumFractionDigits:0}).format(v);
@@ -395,6 +523,17 @@
         if(activeSizeBtn) selectedSize = activeSizeBtn.dataset.size;
       }
       const cartKey = baseId + (selectedSize ? `-${selectedSize}` : "");
+      
+      // Validación de stock máximo permitido
+      const maxAvailable = stock[cartKey] ?? stock[baseId] ?? Infinity;
+      const currentQty = cart[cartKey] ? cart[cartKey].qty : 0;
+
+      if(currentQty >= maxAvailable){
+        notify(`¡Solo hay ${maxAvailable} unidad(es) disponible(s) de este producto!`);
+        if(open) openCart();
+        return;
+      }
+
       if(!cart[cartKey]){
         cart[cartKey] = { baseId: baseId, size: selectedSize, qty: 0 };
       }
@@ -481,7 +620,21 @@
       if(!control) return;
       const key = control.dataset.key;
       if(control.classList.contains("quantity-btn")){
-        cart[key].qty += Number(control.dataset.change);
+        const change = Number(control.dataset.change);
+        
+        // Validar stock al presionar el botón de sumar (+) en el carrito
+        if(change > 0){
+          const item = cart[key];
+          const baseId = item.baseId;
+          const maxAvailable = stock[key] ?? stock[baseId] ?? Infinity;
+          
+          if(item.qty >= maxAvailable){
+            notify(`¡Máximo alcanzado (${maxAvailable} disponible(s))!`);
+            return;
+          }
+        }
+
+        cart[key].qty += change;
         if(cart[key].qty <= 0) delete cart[key];
         renderCart();
       }
