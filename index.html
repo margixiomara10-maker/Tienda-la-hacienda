@@ -32,7 +32,7 @@
     .image-modal.open .image-modal-panel { transform: scale(1); }
 
     /* Estilos para el carrusel de imágenes en las tarjetas */
-    .product-carousel { position: relative; overflow: hidden; }
+    .product-carousel { position: relative; overflow: hidden; height: 16rem; }
     .carousel-track { display: flex; transition: transform 0.3s ease; height: 100%; }
     .carousel-slide { min-width: 100%; width: 100%; height: 16rem; object-fit: cover; flex-shrink: 0; }
     .carousel-btn { opacity: 0; transition: opacity 0.2s ease; }
@@ -269,7 +269,7 @@
   <template id="product-template">
    <article class="product-card overflow-hidden rounded-2xl border border-[#e9e1e9] bg-white flex flex-col justify-between">
     <!-- Carrusel de Imágenes -->
-    <div class="product-carousel h-64 w-full relative">
+    <div class="product-carousel w-full relative">
      <div class="carousel-track"></div>
      <button class="carousel-btn prev-slide absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-[#30263a] rounded-full p-1.5 shadow-md z-10 cursor-pointer" type="button" aria-label="Imagen anterior">
       <i data-lucide="chevron-left" class="h-4 w-4"></i>
@@ -362,10 +362,11 @@
         ["Conjunto blanco y negro","Flexible para entrenar con comodidad, Conjunto licra media pierna Talla Única.",45000,"Conjunto_Blanco_Negro.jpg"],["Conjunto Rojo","Ajuste suave y diseño versátil para tu rutina, Conjunto licra media pierna Talla Única.",45000,"Conjunto_Rojo_Negro_Beige.jpg"],["Conjunto Blanco y Azúl","Conjunto tonos claros para entrenar con estilo, Conjunto licra media pierna Talla Única.",45000,"Conjunto_Azul_Blanco.jpg"],["Conjunto Negro","Tu comodidad diaria, llevada al siguiente nivel, Conjunto licra media pierna Talla Única.",45000,"Conjunto_Negro.jpg"],["Conjunto Rojo Estampado","Prenda cómoda para movilidad natural, Conjunto licra corta Talla Única.",43000,"Conjunto_Rojo_Negro_Blanco.jpg"],["Conjunto Amarillo","Estilo activo que se adapta a tu ritmo, Conjunto licra corta Talla Única.",43000,"Conjunto_Amarillo.jpg"],["Conjunto Rosa Texturizado","Ligero, fresco y listo para moverte,Conjunto licra corta texturizada Talla Única .",43000,"Conjunto_Rosa.jpg"],["Conjunto Fucsia","Diseño funcional de alto rendimiento, Conjunto licra corta Talla Única.",43000,"Conjunto_Fucsia_Azul.jpg"],["Conjunto Nike Azúl claro","Simple, elegante y listo para entrenar, Conjunto licra a la rodilla Talla Única .",48000,"Conjunto_Nike_Azul_Medio.jpg"],["Conjunto Nike Azúl oscuro","Comodidad deportiva para tus recorridos, Conjunto licra larga Talla Única.",48000,"Conjunto_Nike_Oscuro_Largo.jpg"],["Enterizo Azúl Brillante","Tan ligero que olvidarás que lo llevas puesto, Talla Única.",50000,"Enterizo_Azul.jpg"]
       ],
       sportShoes: [
-        ["Nike Free Metcom Blanca Rosada","Soporte y amortiguación para alto rendimiento.",200000,"Zapatos_white_elemental_pink_w.jpg"],
+        ["Nike Free Metcom Blanca Rosada","Soporte y amortiguación para alto rendimiento.",120000,"Zapatos_white_elemental_pink_w.jpg"],
       ],
       women: [
-        ["Conjunto Bordeaux Romance","Silueta fluida para una presencia elegante,Elegante set de lencería en tono borgoña, confeccionado en fino encaje floral con lazos de satén.",48000,["Lenceria_Roja_1.jpg","Lenceria_Roja_2.jpg","Lenceria_Roja_3.jpg"]],["Conjunto Sweet Peony","Lencería de encaje floral rosa y tul. Incluye brasier con aro y tanga ajustable con delicados lazos de satén.",48000,["Lenceria_rosa_1.jpg","Lenceria_rosa_2.jpg","Lenceria_rosa_3.jpg"]]
+        ["Conjunto Bordeaux Romance","Silueta fluida para una presencia elegante,Elegante set de lencería en tono borgoña, confeccionado en fino encaje floral con lazos de satén.",48000,["Lenceria_Roja_1.jpg","Lenceria_Roja_2.jpg","Lenceria_Roja_3.jpg"]],["Conjunto Sweet Peony","Lencería de encaje floral rosa y tul. Incluye brasier con aro y tanga ajustable con delicados lazos de satén.",48000,
+        ["Lenceria_rosa_1.jpg","Lenceria_rosa_2.jpg","Lenceria_rosa_3.jpg"]],["Conjunto Azul Nocturno","Conjunto de lencería de encaje en tono azul oscuro, elegante y delicado, panty ajustable con un diseño sofisticado que combina comodidad y estilo.",38000,["Lenceria_Azúl_1.jpg","Lenceria_Azúl_2.jpg"]]
       ],
       accessories: [
         ["Collar Tulipan","Brillo delicado para completar tus looks. Material Acero inoxidable.",20000,"Collar_Tulipan_Cuadrado.jpg"],["Esclava Hombre","Diseño contemporáneo para un estilo con actitud, lleva tallado el padre nuestro. Material Acero inoxidable.",28000,"Esclava_Hombre_PadreNuestro.jpg"],["Pin de Fisioterapia","Dale un detalle personalizado a tus prendas. Material Acero inoxidable.",18000,["Pin_Fisioterapia_Maleta.jpg", "Pin_Fisioterapia.jpg"]],["Pin Corazón minimalista","Un detalle atemporal para cada ocasión.",18000,"Pin_corazón_minimalista.jpg"],["Pin Corazón dorado","Un accesorio unico para que lo lleves contigo a todas partes. Pin metálico.",18000,"Pin_corazón_compacto.jpg"]
@@ -376,7 +377,7 @@
     const agotados = {
       "sport-1": ["S", "M", "L"], "sport-2": ["S", "M", "L"], "sport-3": ["S", "M", "L"], "sport-4": ["S", "M", "L"], "sport-5": ["S", "M", "L"], "sport-6": ["S", "M", "L"], "sport-7": ["S", "M", "L"], "sport-8": ["S", "M", "L"], "sport-9": ["S", "M", "L"], "sport-10": ["S", "M", "L"], "sport-11": ["S", "L", "Única"],
       "sportShoes-1": ["36"],
-      "women-1": ["S", "M", "Única"], "women-2": ["S", "Única"]
+      "women-1": ["S", "M", "Única"], "women-2": ["S", "M", "Única"], "women-3": ["S", "L", "Única"]
     };
 
     // Límite de stock máximo por producto o por talla específica (ej. "sport-1": 2 o "sport-1-M": 1)
