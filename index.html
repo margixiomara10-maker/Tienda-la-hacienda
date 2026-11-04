@@ -538,9 +538,9 @@
 
     function addProduct(baseId,open,cardElement){
       let selectedSize = "";
-      if (cardElement && cardElement.querySelector(".size-container:not(.hidden)") && !selectedSize) {
-    notify("Selecciona una talla disponible antes de continuar.");
-    return;
+      if(cardElement){
+    const activeSizeBtn = cardElement.querySelector(".size-btn.selected-size");
+    if(activeSizeBtn) selectedSize = activeSizeBtn.dataset.size;
 }
       const cartKey = baseId + (selectedSize ? `-${selectedSize}` : "");
       
