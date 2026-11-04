@@ -538,10 +538,10 @@
 
     function addProduct(baseId,open,cardElement){
       let selectedSize = "";
-      if(cardElement){
-        const activeSizeBtn = cardElement.querySelector(".size-btn.selected-size");
-        if(activeSizeBtn) selectedSize = activeSizeBtn.dataset.size;
-      }
+      if (cardElement && cardElement.querySelector(".size-container:not(.hidden)") && !selectedSize) {
+    notify("Selecciona una talla disponible antes de continuar.");
+    return;
+}
       const cartKey = baseId + (selectedSize ? `-${selectedSize}` : "");
       
       // Validación de stock máximo permitido
